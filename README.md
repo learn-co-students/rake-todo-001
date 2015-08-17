@@ -1,5 +1,4 @@
 
-
 # Rake TODO
 
 Rake is a DSL written in Ruby designed as a build system and generic task runner. It was built by the late and great [Jim Weirich](http://en.wikipedia.org/wiki/Jim_Weirich).
@@ -71,7 +70,7 @@ Hello, from rake
 
 Rake provides programmatic access to the tasks defined in the Rakefile via [`Rake::Task`](http://rake.rubyforge.org/classes/Rake/Task.html). There are a lot of useful things you can do with this, one of which is testing!
 
-Included is a `spec/rakefile_spec` that will test your progression through this tutorial. Read it, it's fun. Also, checkout how the `Rakefile` was loaded into the test suite in the `spec_helper`.
+Included is a `spec/rakefile_spec` that will test your progression through this tutorial. Read it, it's fun. Also, check out how the `Rakefile` was loaded into the test suite in the `spec_helper`.
 
 You also have a console you can run that will load your environment and your Rakefile so you can play with the Rake::Task api. `bin/console` to try it out!
 
