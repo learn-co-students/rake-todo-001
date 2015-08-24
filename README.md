@@ -1,8 +1,3 @@
----
-  tags: rake
-  language: ruby
-  resources: 10
----
 
 # Rake TODO
 
@@ -75,7 +70,7 @@ Hello, from rake
 
 Rake provides programmatic access to the tasks defined in the Rakefile via [`Rake::Task`](http://rake.rubyforge.org/classes/Rake/Task.html). There are a lot of useful things you can do with this, one of which is testing!
 
-Included is a `spec/rakefile_spec` that will test your progression through this tutorial. Read it, it's fun. Also, checkout how the `Rakefile` was loaded into the test suite in the `spec_helper`.
+Included is a `spec/rakefile_spec` that will test your progression through this tutorial. Read it, it's fun. Also, check out how the `Rakefile` was loaded into the test suite in the `spec_helper`.
 
 You also have a console you can run that will load your environment and your Rakefile so you can play with the Rake::Task api. `bin/console` to try it out!
 
@@ -83,7 +78,7 @@ You also have a console you can run that will load your environment and your Rak
 
 You can specify a default rake task within a rake file by naming it `default`.
 
-First, run `rspec` and see the error we get without the default task defined.
+First, run `learn` and see the error we get without the default task defined.
 
 ```
   1) Rakefile default task defines a default task hello_world
@@ -106,7 +101,7 @@ task :default do
 end
 ```
 
-Run it by simply invoking `rake` from your terminal. Run `rspec` again and you should be on the next error.
+Run it by simply invoking `rake` from your terminal. Run `learn` again and you should be on the next error.
 
 ## Task Prerequisites
 
@@ -122,7 +117,7 @@ task :environment do
 end
 ```
 
-After adding this, run `rspec`.
+After adding this, run `learn`.
  
 It's a simple task, it simply loads the environment. Now, we can define a task that relies on this task for being run.
 
@@ -289,9 +284,6 @@ end
 When invoking the task, you simply pass along a temporary ENV variable assignment.
 
 `rake user:todo_reminder EMAIL=student@flatironschool.com`
-
-This becomes harder to test but still possible. Try to write a test.
-
 
 ## Resources
 * [Lukasz Wrobel's Blog](http://lukaszwrobel.pl/) - [Rake Tutorial](http://lukaszwrobel.pl/blog/rake-tutorial)
